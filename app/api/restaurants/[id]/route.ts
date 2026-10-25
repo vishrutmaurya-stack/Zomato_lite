@@ -80,8 +80,8 @@ export async function GET(
       averageRating:
         average === null ? null : Math.round(Number(average) * 10) / 10,
       totalReviews: total,
-      latestReview: latestRows.length > 0 ? toReview(latestRows[0]) : null,
-      reviews: olderRows.map(toReview),
+      latestReview: latestRows.length > 0 ? toReview(latestRows[0] as ReviewRow) : null,
+      reviews: olderRows.map((row) => toReview(row as ReviewRow)),
     });
   } catch (err) {
     console.error("GET /api/restaurants/[id] failed:", err);
