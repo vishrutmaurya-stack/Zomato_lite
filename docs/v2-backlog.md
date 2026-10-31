@@ -10,10 +10,10 @@ us to answer first.
 
 ## Design direction (V2 look)
 
-- Gradient scrim on the name banner
-- Material-style cards with soft drop shadows
-- Lavender-tinted surface (#faf8ff) and Plus Jakarta Sans typeface
-- Fixed blur header + sticky bottom "Write a Review" bar
+**Shipped 2026-10-31** (V2 design commit): lavender-tinted surface (#faf8ff) and
+Plus Jakarta Sans typeface; gradient name banner; blurred app headers; soft card
+shadows; sticky bottom "Write a Review" bar. Feature items below remain parked —
+they need new data and product decisions first.
 
 ## Features (each needs a data decision first)
 

@@ -1,15 +1,18 @@
 @import "tailwindcss";
 
-/* Zomato Lite V1 design tokens — off-white, near-black, one warm accent.
-   Change a token here and every screen follows. */
+/* Zomato Lite V2 tokens — from the Stitch design handoff.
+   Versioned scope decision, 2026-10-31: lavender surface, crimson primary,
+   Jakarta Sans, soft shadows. Feature backlog items stay parked in docs/. */
 :root {
-  --paper: #faf9f7;        /* page background: off-white */
-  --card: #ffffff;         /* card surfaces: plain white */
+  --paper: #faf8ff;        /* page background: lavender-tinted white */
+  --card: #ffffff;         /* card surfaces */
   --ink: #1a1917;          /* primary text: near-black */
   --muted: #766f66;        /* secondary text: warm grey */
-  --line: #e6e1d9;         /* hairline borders */
-  --accent: #b45309;       /* the one warm accent: terracotta */
-  --accent-soft: #f7ede3;  /* accent at 8%, for tints */
+  --line: #e6e2ee;         /* hairline borders, tinted lavender-grey */
+  --accent: #b7122a;       /* primary: crimson */
+  --accent-soft: #f6e3e4;  /* accent tint, for banners and badges */
+  --success: #006b2c;      /* rating chips: deep green */
+  --success-soft: #e4f3e8;
 }
 
 @theme inline {
@@ -20,12 +23,14 @@
   --color-line: var(--line);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
-  --font-sans: var(--font-geist-sans);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --font-sans: var(--font-plus-jakarta);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta), Arial, Helvetica, sans-serif;
 }
